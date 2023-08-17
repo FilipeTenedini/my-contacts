@@ -1,15 +1,15 @@
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from './Pages/HomePage';
-import NewContactPage from './Pages/NewContactPage';
-import EditContactPage from './Pages/EditContactPage';
+import Home from './Pages/Home';
+import NewContact from './Pages/NewContact';
+import EditContact from './Pages/EditContact';
 
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/new" component={NewContactPage} />
-      <Route path="/edit/:id" component={EditContactPage} />
+      <Route path="/" exact component={Home} />
+      <Route path="/new" component={NewContact} />
+      <Route path="/edit/:id" component={EditContact} />
     </Switch>
   );
 }
